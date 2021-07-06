@@ -1,0 +1,44 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class ammu
+ {
+   public static void main(String args[])
+   { 
+    Scanner sc=new Scanner(System.in);
+    
+    System.out.println("Enter size of the array");
+    int n=sc.nextInt();
+    int a[]=new int[n];
+    
+    
+    //reading
+    System.out.println("enter values into array");
+    for(int i=0;i<n;i++)
+    a[i]=sc.nextInt();
+    
+    //writing
+    int largest,secondlargest,i;
+    largest=secondlargest=0;
+    for(i=0;i<n;i++)
+    {
+      if(largest<a[i])
+      {
+        secondlargest=largest;
+        largest=a[i];
+        }
+        if(secondlargest<a[i] && a[i]<largest)
+        {
+          secondlargest=a[i];
+        }
+      }
+    System.out.print("secondlargest value is  "+secondlargest);
+    }
+   }
+Output:
+Enter size of the array
+5
+enter values into array
+55 66 88 99 33
+secondlargest value is  88
