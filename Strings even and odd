@@ -1,0 +1,36 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class ammu
+ {
+   public static void main(String args[])
+   { 
+   
+  Scanner sc= new scanner(System.in);
+  int n= string.length();
+  
+    System.out.print("Enter a string: ");
+    
+    if(int i=0;i>0;i++);
+     {
+        if (i % 2 == 0) {
+           System.out.print("The even string is "+even);
+             
+        } else
+        if(i%2==1) 
+        {
+          System.out.print("The odd string is "+odd);
+            
+        }
+        
+    }
+
+
+}
+}
+Output:
+Enter a string:
+123456
+Even:246
+Odd:135
