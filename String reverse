@@ -1,0 +1,29 @@
+import java.util.Scanner;
+ 
+ class Reverse
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+ 
+        System.out.println("Enter the string:");
+ 
+        String s = sc.nextLine();
+ 
+        int l = s.length();
+ 
+        System.out.println("Length="+l);
+ 
+        char ch[] = s.toCharArray();
+ 
+        for(int i=l-1; i>=0; i--)
+        {
+            System.out.print(ch[i]);
+        }
+    }
+}
+Output:
+Enter the string:
+The moon comes in the evening.
+Length=30
+.gnineve eht ni semoc noom ehT
