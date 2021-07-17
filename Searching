@@ -1,0 +1,39 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    
+   Scanner sc=new Scanner(System.in);
+   
+   int n;
+   System.out.print("enter elements:");
+   ArrayList<Integer>m=new ArrayList<Integer>();
+   n=sc.nextInt();
+   for(Integer i=0;i<4;i++)
+   {
+    m.add(sc.nextInt());
+   }
+   System.out.println("enter value to search");
+   int key= sc.nextInt();
+   if(m.contains(key))
+   {
+   System.out.println("element found");
+   }
+   else
+   {
+   System.out.println("element not found");
+   m.set(key,99);
+   }
+  }
+  } 
+Output:
+Enter elements: 5
+10 20 30 40 50
+Enter value to search
+20
+Element found
+10 99 30 40 50
