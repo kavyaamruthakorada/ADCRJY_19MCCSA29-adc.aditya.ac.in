@@ -1,0 +1,28 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+
+public class Main 
+{​​​​​
+static
+ LinkedList linkedList =new LinkedList();
+ public static void main(String [] args)
+ {​​​​​
+ System.out.println("please enter numbers you wanna store in a linked list");
+ Scanner scanner=new Scanner(System.in);
+ while
+  (scanner.hasNextInt())
+  {​​​​​
+  linkedList.append(scanner.nextInt());
+  }​​​​​
+  if 
+  (linkedList.head!=null)
+  {​​​​​
+  Node current;current=linkedList.head;
+  while (current.next!=null)
+  {​​​​​
+  current=current.next;
+System.out.println(current.data);
+}​​​​​
+}​​​​​
