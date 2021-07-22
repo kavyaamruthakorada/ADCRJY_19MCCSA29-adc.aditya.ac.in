@@ -1,0 +1,36 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    HashMap<Integer,Integer>x=new HashMap<Integer,Integer>();
+    int[] arr = {3,4,5,7,8,9,10,15,17,20,35,33,60};
+    int n = arr.size();
+    int key;
+      key=arr[i];
+		for (int i = 0; i < n; i++) {
+			if (arr.get(i) != 0)
+				for (int j = arr.get(i) * 2;
+					j <= max_ele;
+					j += arr.get(i)) {
+					if (s.contains(j))
+						res.add(j);
+				}
+		}
+	
+		Collections.reverse(key);
+
+		for (Integer temp : key)
+		 divisibilityCheck(arr, n);
+			System.out.print(temp + " ");
+			divisibilityCheck(arr, n);
+	}
+
+    }
+    
+    Output:
+3=4
+5=6
